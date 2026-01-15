@@ -1,0 +1,40 @@
+return {
+    "nvim-treesitter/nvim-treesitter",
+    version = false,
+    build = ":TSUpdate",
+    event = { "LazyFile", "VeryLazy" },
+    dependencies = {
+        "windwp/nvim-ts-autotag",
+    },
+    ---@type TSConfig
+    ---@diagnostic disable-next-line: missing-fields
+    opts = {
+        highlight = { enable = true },
+        indent = { enable = true },
+        autotag = { enable = true },
+        ensure_installed = {
+            "python",
+            "json",
+            "javascript",
+            "typescript",
+            "tsx",
+            "yaml",
+            "html",
+            "css",
+            "prisma",
+            "markdown",
+            "markdown_inline",
+            "svelte",
+            "graphql",
+            "bash",
+            "regex",
+            "lua",
+            "vim",
+            "dockerfile",
+            "gitignore",
+            "query",
+            "vimdoc",
+            "c",
+        },
+    },
+}
