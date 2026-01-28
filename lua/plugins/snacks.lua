@@ -3,7 +3,19 @@ return {
     opts = {
         picker = {
             hidden = true,
-            ignored = true
-        }
-    }
+            ignored = true,
+            sources = {
+                explorer = {
+                    win = {
+                        list = {
+                            wo = {
+                                number = true,
+                                relativenumber = true,
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    },
 }
